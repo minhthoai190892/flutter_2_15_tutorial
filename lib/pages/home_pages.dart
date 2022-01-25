@@ -67,14 +67,20 @@ class HomePage extends StatelessWidget {
                 title: const Text("Extract Widget"),
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushReplacementNamed(
+                      context, '/mapping_collection');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("Mapping Collections"),
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushReplacementNamed(
+                      context, '/widgetbuilder');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("Widget Builder"),
               ),
               ListTile(
                 onTap: () {},

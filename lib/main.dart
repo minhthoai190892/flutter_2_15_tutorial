@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_2_15/pages/extract_widget.dart';
 import 'package:flutter_2_15/pages/home_pages.dart';
+import 'package:flutter_2_15/pages/mapping_collections.dart';
 import 'package:flutter_2_15/pages/visible_invisible_widget.dart';
 import 'package:flutter_2_15/pages/widget_dasar_page.dart';
+import 'package:flutter_2_15/pages/wiget_builder.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,6 +23,8 @@ class MyApp extends StatelessWidget {
         VisibleInvisibleWidgetPage.routeName: (context) =>
             const VisibleInvisibleWidgetPage(),
         ExtractWidget.nameRoute: (context) => const ExtractWidget(),
+        MappingCollection.nameRoute:(context)=> MappingCollection(),
+        WidgetBuilderr.nameRoute:(context)=> const WidgetBuilderr(),
       },
     );
   }
