@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_2_15/pages/example_basic.dart';
 import 'package:flutter_2_15/pages/extract_widget.dart';
 import 'package:flutter_2_15/pages/home_pages.dart';
 import 'package:flutter_2_15/pages/mapping_collections.dart';
@@ -24,7 +25,8 @@ class MyApp extends StatelessWidget {
             const VisibleInvisibleWidgetPage(),
         ExtractWidget.nameRoute: (context) => const ExtractWidget(),
         MappingCollection.nameRoute:(context)=> MappingCollection(),
-        WidgetBuilderr.nameRoute:(context)=> const WidgetBuilderr(),
+        WidgetBuilderr.nameRoute:(context)=>  const WidgetBuilderr(),
+        ExampleBasic.nameRoute:(context)=> const ExampleBasic(),
       },
     );
   }
