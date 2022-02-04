@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_2_15/widgets/floating_action_button.dart';
 
 class StatelessStateful extends StatefulWidget {
-  StatelessStateful({Key? key}) : super(key: key);
+  const StatelessStateful({Key? key}) : super(key: key);
   static const nameRoute = '/statelessStateful';
 
   @override
@@ -23,8 +23,8 @@ class _StatelessStatefulState extends State<StatelessStateful> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "${i}",
-              style: TextStyle(fontSize: 50),
+              "$i",
+              style: const TextStyle(fontSize: 50),
             ),
             const SizedBox(
               height: 10,
@@ -35,6 +35,7 @@ class _StatelessStatefulState extends State<StatelessStateful> {
                 ElevatedButton(
                   onPressed: () {
                     i--;
+                    // ignore: avoid_print
                     print(i);
                     setState(() {
                       
@@ -45,6 +46,7 @@ class _StatelessStatefulState extends State<StatelessStateful> {
                 ElevatedButton(
                   onPressed: () {
                     i++;
+                    // ignore: avoid_print
                     print(i);
                     setState(() {
                       

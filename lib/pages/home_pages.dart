@@ -96,9 +96,11 @@ class HomePage extends StatelessWidget {
                 title: const Text("Stateless & Stateful"),
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushReplacementNamed(context, '/dialogg');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("Dialog"),
               ),
               ListTile(
                 onTap: () {},

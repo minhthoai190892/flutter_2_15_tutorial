@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_2_15/pages/dialog.dart';
 import 'package:flutter_2_15/pages/example_basic.dart';
 import 'package:flutter_2_15/pages/extract_widget.dart';
 import 'package:flutter_2_15/pages/home_pages.dart';
@@ -28,7 +29,8 @@ class MyApp extends StatelessWidget {
         MappingCollection.nameRoute: (context) => MappingCollection(),
         WidgetBuilderr.nameRoute: (context) => const WidgetBuilderr(),
         ExampleBasic.nameRoute: (context) => const ExampleBasic(),
-        StatelessStateful.nameRoute: (context) =>  StatelessStateful()
+        StatelessStateful.nameRoute: (context) =>  const StatelessStateful(),
+        Dialogg.nameRoute:(context)=>const Dialogg(),
       },
     );
   }
