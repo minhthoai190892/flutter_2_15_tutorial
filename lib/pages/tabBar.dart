@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:flutter_2_15/widgets/floating_action_button.dart';
 
 class TabBarr extends StatelessWidget {
   const TabBarr({Key? key}) : super(key: key);
@@ -50,6 +51,7 @@ class TabBarr extends StatelessWidget {
             child: Text("tab 3"),
           ),
         ]),
+        floatingActionButton: const floatingActionButton(),
       ),
     );
   }

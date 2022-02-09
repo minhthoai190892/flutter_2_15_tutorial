@@ -124,9 +124,11 @@ class HomePage extends StatelessWidget {
                 title: const Text("Tab Bar"),
               ),
               ListTile(
-                onTap: () {},
+                 onTap: () {
+                  Navigator.pushReplacementNamed(context, '/dropdown');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("DropDown"),
               ),
               ListTile(
                 onTap: () {},

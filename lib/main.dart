@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_2_15/pages/dialog.dart';
+import 'package:flutter_2_15/pages/dropdown.dart';
 import 'package:flutter_2_15/pages/example_basic.dart';
 import 'package:flutter_2_15/pages/extract_widget.dart';
 import 'package:flutter_2_15/pages/home_pages.dart';
@@ -37,6 +38,7 @@ class MyApp extends StatelessWidget {
         SnackBarr.nameRoute:(context)=>const SnackBarr(),
         TextFieldd.nameRoute:(context)=>const TextFieldd(),
         TabBarr.nameRoute:(context)=>const TabBarr(),
+        DropDownn.nameRoute:(context)=> DropDownn(),
       },
     );
   }
