@@ -4,6 +4,7 @@ import 'package:flutter_2_15/pages/example_basic.dart';
 import 'package:flutter_2_15/pages/extract_widget.dart';
 import 'package:flutter_2_15/pages/home_pages.dart';
 import 'package:flutter_2_15/pages/mapping_collections.dart';
+import 'package:flutter_2_15/pages/snackBar.dart';
 import 'package:flutter_2_15/pages/stateless_stateful.dart';
 import 'package:flutter_2_15/pages/visible_invisible_widget.dart';
 import 'package:flutter_2_15/pages/widget_dasar_page.dart';
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
         ExampleBasic.nameRoute: (context) => const ExampleBasic(),
         StatelessStateful.nameRoute: (context) =>  const StatelessStateful(),
         Dialogg.nameRoute:(context)=>const Dialogg(),
+        SnackBarr.nameRoute:(context)=>const SnackBarr(),
       },
     );
   }

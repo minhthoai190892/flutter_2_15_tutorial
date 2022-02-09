@@ -48,13 +48,15 @@ class Dialogg extends StatelessWidget {
                     builder: (context) => AlertDialog(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15),
-                        
                       ),
                       title: const Text("Warning"),
                       content: const Text("dataaaaaaaaaaaaaaaaaaaaaaaa"),
                       actions: [
                         ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            ScaffoldMessenger.of(context)
+                                .showSnackBar(const SnackBar(content: Text("data")));
+                          },
                           child: const Icon(Icons.cancel_outlined),
                         ),
                         ElevatedButton(
