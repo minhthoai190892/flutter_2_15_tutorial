@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_2_15/widgets/floating_action_button.dart';
 
 class DropDownn extends StatefulWidget {
-  DropDownn({Key? key}) : super(key: key);
+  const DropDownn({Key? key}) : super(key: key);
   static const nameRoute = '/dropdown';
 
   @override
@@ -29,6 +29,7 @@ class _DropDownnState extends State<DropDownn> {
   @override
   void initState() {
     dataAwal = dataItem[1]['data'];
+    // ignore: todo
     // TODO: implement initState
     super.initState();
   }
@@ -41,7 +42,7 @@ class _DropDownnState extends State<DropDownn> {
       ),
       body: Center(
         child: Padding(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           child: DropdownButton<int>(
             value: dataAwal,
             items: dataItem
@@ -55,6 +56,7 @@ class _DropDownnState extends State<DropDownn> {
             onChanged: (value) {
               setState(() {
                 dataAwal = value!;
+                // ignore: avoid_print
                 print(value);
               });
             },

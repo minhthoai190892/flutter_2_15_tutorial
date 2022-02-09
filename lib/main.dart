@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_2_15/pages/bottomNavigationBar.dart';
 import 'package:flutter_2_15/pages/dialog.dart';
 import 'package:flutter_2_15/pages/dropdown.dart';
 import 'package:flutter_2_15/pages/example_basic.dart';
@@ -38,7 +39,8 @@ class MyApp extends StatelessWidget {
         SnackBarr.nameRoute:(context)=>const SnackBarr(),
         TextFieldd.nameRoute:(context)=>const TextFieldd(),
         TabBarr.nameRoute:(context)=>const TabBarr(),
-        DropDownn.nameRoute:(context)=> DropDownn(),
+        DropDownn.nameRoute:(context)=> const DropDownn(),
+        BottomNavigationBarr.nameRoute:(context)=>const BottomNavigationBarr(),
       },
     );
   }
