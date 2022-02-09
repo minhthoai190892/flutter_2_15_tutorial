@@ -7,6 +7,7 @@ import 'package:flutter_2_15/pages/example_basic.dart';
 import 'package:flutter_2_15/pages/extract_widget.dart';
 import 'package:flutter_2_15/pages/home_pages.dart';
 import 'package:flutter_2_15/pages/mapping_collections.dart';
+import 'package:flutter_2_15/pages/navigation.dart';
 import 'package:flutter_2_15/pages/snackBar.dart';
 import 'package:flutter_2_15/pages/stateless_stateful.dart';
 import 'package:flutter_2_15/pages/tabBar.dart';
@@ -43,6 +44,7 @@ class MyApp extends StatelessWidget {
         DropDownn.nameRoute:(context)=> const DropDownn(),
         BottomNavigationBarr.nameRoute:(context)=>const BottomNavigationBarr(),
         BottomSheett.nameRoute:(context)=>const BottomSheett(),
+        Navigationn.nameRoute:(context)=> const Navigationn(),
       },
     );
   }
