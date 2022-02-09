@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_2_15/pages/bottomNavigationBar.dart';
+import 'package:flutter_2_15/pages/bottomsheet.dart';
 import 'package:flutter_2_15/pages/dialog.dart';
 import 'package:flutter_2_15/pages/dropdown.dart';
 import 'package:flutter_2_15/pages/example_basic.dart';
@@ -41,6 +42,7 @@ class MyApp extends StatelessWidget {
         TabBarr.nameRoute:(context)=>const TabBarr(),
         DropDownn.nameRoute:(context)=> const DropDownn(),
         BottomNavigationBarr.nameRoute:(context)=>const BottomNavigationBarr(),
+        BottomSheett.nameRoute:(context)=>const BottomSheett(),
       },
     );
   }
