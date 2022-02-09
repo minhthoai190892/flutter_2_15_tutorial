@@ -6,6 +6,7 @@ import 'package:flutter_2_15/pages/home_pages.dart';
 import 'package:flutter_2_15/pages/mapping_collections.dart';
 import 'package:flutter_2_15/pages/snackBar.dart';
 import 'package:flutter_2_15/pages/stateless_stateful.dart';
+import 'package:flutter_2_15/pages/textField.dart';
 import 'package:flutter_2_15/pages/visible_invisible_widget.dart';
 import 'package:flutter_2_15/pages/widget_dasar_page.dart';
 import 'package:flutter_2_15/pages/wiget_builder.dart';
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
         StatelessStateful.nameRoute: (context) =>  const StatelessStateful(),
         Dialogg.nameRoute:(context)=>const Dialogg(),
         SnackBarr.nameRoute:(context)=>const SnackBarr(),
+        TextFieldd.nameRoute:(context)=>const TextFieldd(),
       },
     );
   }
