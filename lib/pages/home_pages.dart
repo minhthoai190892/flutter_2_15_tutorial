@@ -76,61 +76,80 @@ class HomePage extends StatelessWidget {
               ),
               ListTile(
                 onTap: () {
-                  Navigator.pushReplacementNamed(
-                      context, '/widgetbuilder');
+                  Navigator.pushReplacementNamed(context, '/widgetbuilder');
                 },
                 leading: const Icon(Icons.home),
                 title: const Text("Widget Builder"),
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushReplacementNamed(context, '/example');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("Example"),
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushReplacementNamed(context, '/statelessStateful');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("Stateless & Stateful"),
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushReplacementNamed(context, '/dialogg');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("Dialog"),
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushReplacementNamed(context, '/snackbar');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("Snack Bar"),
               ),
               ListTile(
-                onTap: () {},
+                 onTap: () {
+                  Navigator.pushReplacementNamed(context, '/textfield');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("Text Field"),
               ),
               ListTile(
-                onTap: () {},
+                 onTap: () {
+                  Navigator.pushReplacementNamed(context, '/tabbar');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("Tab Bar"),
               ),
               ListTile(
-                onTap: () {},
+                 onTap: () {
+                  Navigator.pushReplacementNamed(context, '/dropdown');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("DropDown"),
               ),
               ListTile(
-                onTap: () {},
+               onTap: () {
+                  Navigator.pushReplacementNamed(context, '/BottomNavigationBarr');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("BottomNavigationBarr"),
               ),
               ListTile(
-                onTap: () {},
+               onTap: () {
+                  Navigator.pushReplacementNamed(context, '/BottomSheett');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("BottomSheett"),
               ),
               ListTile(
-                onTap: () {},
+                 onTap: () {
+                  Navigator.pushReplacementNamed(context, '/Navigationn');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("Navigationn"),
               ),
               ListTile(
                 onTap: () {},
