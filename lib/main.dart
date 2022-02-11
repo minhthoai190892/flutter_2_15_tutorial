@@ -8,6 +8,7 @@ import 'package:flutter_2_15/pages/extract_widget.dart';
 import 'package:flutter_2_15/pages/home_pages.dart';
 import 'package:flutter_2_15/pages/http_get.dart';
 import 'package:flutter_2_15/pages/http_post.dart';
+import 'package:flutter_2_15/pages/http_put_patch.dart';
 import 'package:flutter_2_15/pages/mapping_collections.dart';
 import 'package:flutter_2_15/pages/navigation.dart';
 import 'package:flutter_2_15/pages/snackBar.dart';
@@ -38,17 +39,19 @@ class MyApp extends StatelessWidget {
         MappingCollection.nameRoute: (context) => MappingCollection(),
         WidgetBuilderr.nameRoute: (context) => const WidgetBuilderr(),
         ExampleBasic.nameRoute: (context) => const ExampleBasic(),
-        StatelessStateful.nameRoute: (context) =>  const StatelessStateful(),
-        Dialogg.nameRoute:(context)=>const Dialogg(),
-        SnackBarr.nameRoute:(context)=>const SnackBarr(),
-        TextFieldd.nameRoute:(context)=>const TextFieldd(),
-        TabBarr.nameRoute:(context)=>const TabBarr(),
-        DropDownn.nameRoute:(context)=> const DropDownn(),
-        BottomNavigationBarr.nameRoute:(context)=>const BottomNavigationBarr(),
-        BottomSheett.nameRoute:(context)=>const BottomSheett(),
-        Navigationn.nameRoute:(context)=> const Navigationn(),
-        HttpGett.nameRoute:(context)=>const HttpGett(),
-        HttpPost.nameRoute:(context)=>const HttpPost(),
+        StatelessStateful.nameRoute: (context) => const StatelessStateful(),
+        Dialogg.nameRoute: (context) => const Dialogg(),
+        SnackBarr.nameRoute: (context) => const SnackBarr(),
+        TextFieldd.nameRoute: (context) => const TextFieldd(),
+        TabBarr.nameRoute: (context) => const TabBarr(),
+        DropDownn.nameRoute: (context) => const DropDownn(),
+        BottomNavigationBarr.nameRoute: (context) =>
+            const BottomNavigationBarr(),
+        BottomSheett.nameRoute: (context) => const BottomSheett(),
+        Navigationn.nameRoute: (context) => const Navigationn(),
+        HttpGett.nameRoute: (context) => const HttpGett(),
+        HttpPost.nameRoute: (context) => const HttpPost(),
+        HttpPutPatch.nameRoute: (context) => const HttpPutPatch(),
       },
     );
   }
