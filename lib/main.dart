@@ -7,6 +7,7 @@ import 'package:flutter_2_15/pages/example_basic.dart';
 import 'package:flutter_2_15/pages/extract_widget.dart';
 import 'package:flutter_2_15/pages/home_pages.dart';
 import 'package:flutter_2_15/pages/http_get.dart';
+import 'package:flutter_2_15/pages/http_post.dart';
 import 'package:flutter_2_15/pages/mapping_collections.dart';
 import 'package:flutter_2_15/pages/navigation.dart';
 import 'package:flutter_2_15/pages/snackBar.dart';
@@ -47,6 +48,7 @@ class MyApp extends StatelessWidget {
         BottomSheett.nameRoute:(context)=>const BottomSheett(),
         Navigationn.nameRoute:(context)=> const Navigationn(),
         HttpGett.nameRoute:(context)=>const HttpGett(),
+        HttpPost.nameRoute:(context)=>const HttpPost(),
       },
     );
   }

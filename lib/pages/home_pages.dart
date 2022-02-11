@@ -159,9 +159,11 @@ class HomePage extends StatelessWidget {
                 title: const Text("HttpGett"),
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushReplacementNamed(context, '/HttpPost');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("HttpPost"),
               ),
               ListTile(
                 onTap: () {},
