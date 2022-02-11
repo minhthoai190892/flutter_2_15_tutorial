@@ -6,6 +6,7 @@ import 'package:flutter_2_15/pages/dropdown.dart';
 import 'package:flutter_2_15/pages/example_basic.dart';
 import 'package:flutter_2_15/pages/extract_widget.dart';
 import 'package:flutter_2_15/pages/home_pages.dart';
+import 'package:flutter_2_15/pages/http_delete.dart';
 import 'package:flutter_2_15/pages/http_get.dart';
 import 'package:flutter_2_15/pages/http_post.dart';
 import 'package:flutter_2_15/pages/http_put_patch.dart';
@@ -52,6 +53,7 @@ class MyApp extends StatelessWidget {
         HttpGett.nameRoute: (context) => const HttpGett(),
         HttpPost.nameRoute: (context) => const HttpPost(),
         HttpPutPatch.nameRoute: (context) => const HttpPutPatch(),
+        HttpDelete.nameRoute:(context)=> const HttpDelete(),
       },
     );
   }
