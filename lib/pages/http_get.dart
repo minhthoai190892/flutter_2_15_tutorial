@@ -28,6 +28,7 @@ class _HttpGettState extends State<HttpGett> {
     lastName = "";
     email = "";
     name = "";
+    // ignore: todo
     // TODO: implement initState
     super.initState();
   }
@@ -48,11 +49,11 @@ class _HttpGettState extends State<HttpGett> {
                 fontSize: 20,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
-            Text("Information"),
-            SizedBox(
+            const Text("Information"),
+            const SizedBox(
               height: 20,
             ),
             Text(
@@ -106,16 +107,22 @@ class _HttpGettState extends State<HttpGett> {
                         "${data["data"]["first_name"].toString()} ${data["data"]["last_name"].toString()}";
                   });
 
+                  // ignore: avoid_print
                   print(getdata.statusCode);
+                  // ignore: avoid_print
                   print("---------------");
                   // print(getdata.headers);
+                  // ignore: avoid_print
                   print("---------------");
+                  // ignore: avoid_print
                   print(getdata.body);
+                  // ignore: avoid_print
                   print("---------------");
                 } else {
                   setState(() {
                     body = "Error: ${getdata.statusCode}";
                   });
+                  // ignore: avoid_print
                   print("Error: ${getdata.statusCode}");
                 }
               },
