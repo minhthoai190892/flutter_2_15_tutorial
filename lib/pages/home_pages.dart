@@ -180,9 +180,11 @@ class HomePage extends StatelessWidget {
                 title: const Text("HttpDelete"),
               ),
               ListTile(
-                onTap: () {},
+               onTap: () {
+                  Navigator.pushReplacementNamed(context, '/FutureBuilderr');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("FutureBuilderr"),
               ),
               ListTile(
                 onTap: () {},
