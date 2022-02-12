@@ -187,9 +187,11 @@ class HomePage extends StatelessWidget {
                 title: const Text("FutureBuilderr"),
               ),
               ListTile(
-                onTap: () {},
+                 onTap: () {
+                  Navigator.pushReplacementNamed(context, '/FakerTest');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("Faker Test"),
               ),
               ListTile(
                 onTap: () {},

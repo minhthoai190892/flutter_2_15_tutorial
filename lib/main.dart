@@ -5,6 +5,7 @@ import 'package:flutter_2_15/pages/dialog.dart';
 import 'package:flutter_2_15/pages/dropdown.dart';
 import 'package:flutter_2_15/pages/example_basic.dart';
 import 'package:flutter_2_15/pages/extract_widget.dart';
+import 'package:flutter_2_15/pages/faker.dart';
 import 'package:flutter_2_15/pages/futere_builder.dart';
 import 'package:flutter_2_15/pages/home_pages.dart';
 import 'package:flutter_2_15/pages/http_delete.dart';
@@ -56,6 +57,7 @@ class MyApp extends StatelessWidget {
         HttpPutPatch.nameRoute: (context) => const HttpPutPatch(),
         HttpDelete.nameRoute: (context) => const HttpDelete(),
         FutureBuilderr.nameRoute: (context) =>  FutureBuilderr(),
+        FakerTest.nameRoute:(context)=>  FakerTest(),
       },
     );
   }

@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_2_15/models/user.dart';
 import 'package:flutter_2_15/widgets/floating_action_button.dart';
 import 'package:http/http.dart' as http;
 
@@ -8,15 +9,15 @@ import 'package:http/http.dart' as http;
 class FutureBuilderr extends StatelessWidget {
   FutureBuilderr({Key? key}) : super(key: key);
   static const nameRoute = '/FutureBuilderr';
-  List<Map<String, dynamic>> allUser = [];
+  List<UserModel> allUser = [];
   Future getAllUser() async {
     // await Future.delayed(Duration(seconds: 3));
     try {
-      var response = await http.get(Uri.parse("https://reqres.in/api/users/"));
+      var response = await http.get(Uri.parse("https://reqres.in/api/users"));
       List data = (json.decode(response.body) as Map<String, dynamic>)['data'];
       // ignore: avoid_function_literals_in_foreach_calls
-      data.forEach((element) {
-        allUser.add(element);
+      data.forEach((json) {
+        allUser.add(UserModel.fromJson(json));
       });
       // ignore: avoid_print
       print(response.body);
@@ -46,16 +47,20 @@ class FutureBuilderr extends StatelessWidget {
                 child: Text("Loading...."),
               );
             } else {
+              // ignore: prefer_is_empty
+              if (allUser.length == 0) {
+                return const Center(
+                  child: Text("Empty data"),
+                );
+              }
               return ListView.builder(
                 itemCount: allUser.length,
                 itemBuilder: (context, index) => ListTile(
                   leading: CircleAvatar(
-                    backgroundImage:
-                        NetworkImage("${allUser[index]['avatar']}"),
+                    backgroundImage: NetworkImage(allUser[index].avatar),
                   ),
-                  title: Text(
-                      "${allUser[index]['first_name']} ${allUser[index]['last_name']}"),
-                  subtitle: Text("${allUser[index]['email']}"),
+                  title: Text("${allUser[index].firstName} ${allUser[index].lastName}"),
+                  subtitle: Text(allUser[index].email),
                 ),
               );
             }
