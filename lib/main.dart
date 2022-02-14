@@ -5,6 +5,7 @@ import 'package:flutter_2_15/pages/bottomNavigationBarTest.dart';
 import 'package:flutter_2_15/pages/bottomsheet.dart';
 import 'package:flutter_2_15/pages/dialog.dart';
 import 'package:flutter_2_15/pages/dropdown.dart';
+import 'package:flutter_2_15/pages/dropdownsearch.dart';
 import 'package:flutter_2_15/pages/example_basic.dart';
 import 'package:flutter_2_15/pages/extract_widget.dart';
 import 'package:flutter_2_15/pages/faker.dart';
@@ -65,6 +66,7 @@ class MyApp extends StatelessWidget {
        
         AvatarGlowW.nameRoute:(context)=>  const AvatarGlowW(),
         IntroductionScreenTest.nameRoute:(context)=>const IntroductionScreenTest(),
+        DropDownSearchTest.nameRoute:(context)=> DropDownSearchTest(),
       },
     );
   }

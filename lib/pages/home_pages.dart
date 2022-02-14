@@ -215,9 +215,11 @@ class HomePage extends StatelessWidget {
                 title: const Text("IntroductionScreenTest"),
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushReplacementNamed(context, '/DropDownSearchTest');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("DropDownSearchTest"),
               ),
               ListTile(
                 onTap: () {},
