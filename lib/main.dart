@@ -1,16 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_2_15/pages/avatarGlow.dart';
 import 'package:flutter_2_15/pages/bottomNavigationBar.dart';
+import 'package:flutter_2_15/pages/bottomNavigationBarTest.dart';
 import 'package:flutter_2_15/pages/bottomsheet.dart';
 import 'package:flutter_2_15/pages/dialog.dart';
 import 'package:flutter_2_15/pages/dropdown.dart';
+import 'package:flutter_2_15/pages/dropdownsearch.dart';
 import 'package:flutter_2_15/pages/example_basic.dart';
 import 'package:flutter_2_15/pages/extract_widget.dart';
+import 'package:flutter_2_15/pages/faker.dart';
 import 'package:flutter_2_15/pages/futere_builder.dart';
 import 'package:flutter_2_15/pages/home_pages.dart';
 import 'package:flutter_2_15/pages/http_delete.dart';
 import 'package:flutter_2_15/pages/http_get.dart';
 import 'package:flutter_2_15/pages/http_post.dart';
 import 'package:flutter_2_15/pages/http_put_patch.dart';
+import 'package:flutter_2_15/pages/introduction/introduction_screen_lottie.dart';
 import 'package:flutter_2_15/pages/mapping_collections.dart';
 import 'package:flutter_2_15/pages/navigation.dart';
 import 'package:flutter_2_15/pages/snackBar.dart';
@@ -56,6 +61,12 @@ class MyApp extends StatelessWidget {
         HttpPutPatch.nameRoute: (context) => const HttpPutPatch(),
         HttpDelete.nameRoute: (context) => const HttpDelete(),
         FutureBuilderr.nameRoute: (context) =>  FutureBuilderr(),
+        FakerTest.nameRoute:(context)=>  FakerTest(),
+        BottomNavigationBarTest.nameRoute:(context)=> BottomNavigationBarTest(),
+       
+        AvatarGlowW.nameRoute:(context)=>  const AvatarGlowW(),
+        IntroductionScreenTest.nameRoute:(context)=>const IntroductionScreenTest(),
+        DropDownSearchTest.nameRoute:(context)=> DropDownSearchTest(),
       },
     );
   }

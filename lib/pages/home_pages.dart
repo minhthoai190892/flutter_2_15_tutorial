@@ -187,29 +187,39 @@ class HomePage extends StatelessWidget {
                 title: const Text("FutureBuilderr"),
               ),
               ListTile(
-                onTap: () {},
+                 onTap: () {
+                  Navigator.pushReplacementNamed(context, '/FakerTest');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("Faker Test"),
               ),
               ListTile(
-                onTap: () {},
+               onTap: () {
+                  Navigator.pushReplacementNamed(context, '/BottomNavigationBarTest');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("BottomNavigationBarTest"),
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushReplacementNamed(context, '/AvatarGlowW');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("AvatarGlow"),
               ),
               ListTile(
-                onTap: () {},
+                 onTap: () {
+                  Navigator.pushReplacementNamed(context, '/IntroductionScreenTest');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("IntroductionScreenTest"),
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushReplacementNamed(context, '/DropDownSearchTest');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("DropDownSearchTest"),
               ),
               ListTile(
                 onTap: () {},
