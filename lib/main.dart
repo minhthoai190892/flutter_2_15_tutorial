@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_2_15/pages/avatarGlow.dart';
 import 'package:flutter_2_15/pages/bottomNavigationBar.dart';
 import 'package:flutter_2_15/pages/bottomNavigationBarTest.dart';
 import 'package:flutter_2_15/pages/bottomsheet.dart';
@@ -60,6 +61,8 @@ class MyApp extends StatelessWidget {
         FutureBuilderr.nameRoute: (context) =>  FutureBuilderr(),
         FakerTest.nameRoute:(context)=>  FakerTest(),
         BottomNavigationBarTest.nameRoute:(context)=> BottomNavigationBarTest(),
+       
+        AvatarGlowW.nameRoute:(context)=>  const AvatarGlowW()
       },
     );
   }

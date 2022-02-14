@@ -48,7 +48,7 @@ class _BottomNavigationBarTestState extends State<BottomNavigationBarTest> {
     ];
     return Scaffold(
       appBar: AppBar(
-        title: const Text("FakerTest"),
+        title: const Text("BottomNavigationBar"),
       ),
       body: widget[currentIndex],
       floatingActionButton: const floatingActionButton(),

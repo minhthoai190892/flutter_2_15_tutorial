@@ -201,9 +201,11 @@ class HomePage extends StatelessWidget {
                 title: const Text("BottomNavigationBarTest"),
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushReplacementNamed(context, '/AvatarGlowW');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("AvatarGlow"),
               ),
               ListTile(
                 onTap: () {},

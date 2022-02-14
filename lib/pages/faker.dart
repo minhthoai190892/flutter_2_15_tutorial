@@ -19,6 +19,7 @@ class FakerTest extends StatelessWidget {
       body: ListView.builder(
         itemCount: 30,
         itemBuilder: (context, index) => ListTile(
+          
           leading: CircleAvatar(
             backgroundImage: NetworkImage("https://picsum.photos/id/${index+1}/200/300"),
           ),
