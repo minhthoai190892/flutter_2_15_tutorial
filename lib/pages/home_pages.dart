@@ -194,9 +194,11 @@ class HomePage extends StatelessWidget {
                 title: const Text("Faker Test"),
               ),
               ListTile(
-                onTap: () {},
+               onTap: () {
+                  Navigator.pushReplacementNamed(context, '/BottomNavigationBarTest');
+                },
                 leading: const Icon(Icons.home),
-                title: const Text("Home"),
+                title: const Text("BottomNavigationBarTest"),
               ),
               ListTile(
                 onTap: () {},

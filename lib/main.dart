@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_2_15/pages/bottomNavigationBar.dart';
+import 'package:flutter_2_15/pages/bottomNavigationBarTest.dart';
 import 'package:flutter_2_15/pages/bottomsheet.dart';
 import 'package:flutter_2_15/pages/dialog.dart';
 import 'package:flutter_2_15/pages/dropdown.dart';
@@ -58,6 +59,7 @@ class MyApp extends StatelessWidget {
         HttpDelete.nameRoute: (context) => const HttpDelete(),
         FutureBuilderr.nameRoute: (context) =>  FutureBuilderr(),
         FakerTest.nameRoute:(context)=>  FakerTest(),
+        BottomNavigationBarTest.nameRoute:(context)=> BottomNavigationBarTest(),
       },
     );
   }
