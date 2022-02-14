@@ -14,6 +14,7 @@ import 'package:flutter_2_15/pages/http_delete.dart';
 import 'package:flutter_2_15/pages/http_get.dart';
 import 'package:flutter_2_15/pages/http_post.dart';
 import 'package:flutter_2_15/pages/http_put_patch.dart';
+import 'package:flutter_2_15/pages/introduction/introduction_screen_lottie.dart';
 import 'package:flutter_2_15/pages/mapping_collections.dart';
 import 'package:flutter_2_15/pages/navigation.dart';
 import 'package:flutter_2_15/pages/snackBar.dart';
@@ -62,7 +63,8 @@ class MyApp extends StatelessWidget {
         FakerTest.nameRoute:(context)=>  FakerTest(),
         BottomNavigationBarTest.nameRoute:(context)=> BottomNavigationBarTest(),
        
-        AvatarGlowW.nameRoute:(context)=>  const AvatarGlowW()
+        AvatarGlowW.nameRoute:(context)=>  const AvatarGlowW(),
+        IntroductionScreenTest.nameRoute:(context)=>const IntroductionScreenTest(),
       },
     );
   }
